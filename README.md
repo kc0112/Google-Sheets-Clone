@@ -27,15 +27,4 @@
 <img src="img/feautures.PNG" height="400px" width="800px"   align = "center">
 
 
-## Related Links:
-Project Video Link: https://www.linkedin.com/posts/falansh-siddh_html-css-javascript-activity-6801895147249377280-1bh6 <br />
-Live Link: https://fsiddh.github.io/Google-Sheets-Clone/
 
-###### Email: falansh.rs@gmail.com
-
-### Thank you!
-<p align ="center">
-  <a href="https://www.linkedin.com/in/falansh-siddh/" target="_blank"><img src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/linkedin.svg" style="background-color:white;" height="30"      width="30"></a>
-  &nbsp;&nbsp;&nbsp;&nbsp;
-  <a href="Soon" target="_blank"><img src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/twitter.svg" height="30" width="30"></a>
-</p>
