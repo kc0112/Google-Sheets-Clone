@@ -1,0 +1,353 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: "Raleway", sans-serif;
+	color: rgb(44, 44, 44);
+}
+
+option {
+	font-family: var(--font);
+}
+
+.menu-container {
+	background-color: lightblue;
+	height: 80px;
+}
+
+/* ==================== Sheet CSS Starts =====================*/
+.sheets {
+	/* background-color: black; */
+	background-color: rgba(180, 180, 180, 0.452);
+	height: 50px;
+	display: flex;
+}
+
+.add-sheet_container {
+	height: 100%;
+	min-width: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.icon {
+	font-size: 1.2rem;
+	color: black;
+}
+
+.sheets-list {
+	display: flex;
+	height: 100%;
+	overflow-x: auto;
+	justify-content: center;
+	align-items: center;
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+.sheets-list::-webkit-scrollbar {
+	display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.sheets-list {
+	-ms-overflow-style: none; /* IE and Edge */
+	scrollbar-width: none; /* Firefox */
+}
+
+.sheet {
+	min-width: 80px;
+	height: 80%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-right: 2px solid rgb(211, 211, 211);
+	border-radius: 0.2rem;
+}
+
+.active-sheet {
+	background-color: white;
+	/* cursor: default; */
+}
+/* ==================== Sheet CSS ENDS =====================*/
+
+/* ==================== GRID CSS STARTS =====================*/
+.top-left-block {
+	height: 30px;
+	width: 25px;
+	background-color: rgb(82, 82, 82);
+	position: absolute;
+	z-index: 100;
+}
+
+.top-row {
+	height: 30px;
+	background-color: rgba(180, 180, 180, 0.452);
+	display: flex;
+	position: absolute;
+	top: 0px;
+	left: 25px;
+	z-index: 90;
+}
+
+/* .grid_container {
+    position: relative;
+    border:5px solid red
+} */
+.row {
+	display: flex;
+}
+
+.col {
+	min-width: 80px;
+	max-width: 80px;
+	border: 1px solid rgba(141, 141, 141, 0.13);
+	min-height: 30px;
+	word-break: break-all; /* Breaks the word, to shift into multiple lines*/
+	/* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.left-col {
+	width: 25px;
+	position: absolute;
+	z-index: 90;
+	top: 30px;
+	left: 0px;
+}
+.left-col_box {
+	height: 30px;
+	background-color: rgba(180, 180, 180, 0.452);
+	text-align: center;
+	border: 1px solid rgba(141, 141, 141, 0.13);
+}
+
+.grid_container {
+	height: calc(100vh - (80px + 30px + 40px));
+	overflow: auto;
+	position: relative;
+}
+.grid {
+	position: absolute;
+	top: 30px;
+	left: 25px;
+}
+/* ==================== GRID CSS ENDS =====================*/
+
+/* ==================== MAIN CONTAINER CSS STARTS =====================*/
+.main_container {
+	display: flex;
+}
+/* ==================== MAIN CONTAINER CSS ENDS =====================*/
+
+/* ==================== ICON CSS STARTS =====================*/
+.icon_container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 4rem;
+	height: 70px;
+	/* border: 1px solid red; */
+}
+
+/* ==================== ICON CSS ENDS =====================*/
+
+/* ==================== NOS AND MENU CONTAINER STARTS =====================*/
+.nos_and_menu_container {
+	width: 100%;
+}
+/* ==================== NOS AND MENU CONTAINER ENDS =====================*/
+
+/* ==================== NOS STARTS =====================*/
+
+.nos-container {
+	height: 30px;
+	/* background-color: #004e15da; */
+	display: flex;
+	align-items: center;
+	border-bottom: 1px solid lightgrey;
+	/* border: 1px solid red; */
+}
+.nos-container > * {
+	/* border-right: 2px solid rgba(211, 211, 211, 0.247); */
+	margin-right: 1rem;
+	/* border: 1px solid red; */
+	height: 80%;
+	width: 3rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+/* ==================== NOS ENDS =====================*/
+
+/* ==================== Menu Container CSS Starts =====================*/
+.active-btn {
+	background-color: rgba(16, 126, 12, 0.329);
+	color: darkgreen;
+}
+.hover-active-btn {
+	background-color: rgb(235, 234, 234)
+}
+
+.menu-container {
+	background-color: rgba(255, 255, 255, 0.452);
+	/* border: 1px solid lightgray; */
+	height: 40px;
+	display: flex;
+	align-items: center;
+}
+
+.menu-container > * {
+	height: 80%;
+	width: 20%;
+	border-right: 2px solid rgb(233, 233, 233);
+	color: rgba(0, 0, 0, 0.7);
+	/* border: 1px solid red; */
+}
+
+.font-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 8%;
+}
+.font-family {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 70%;
+	border: none;
+	/* border: 1px solid lightgrey; */
+}
+
+.fontSize-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 4%;
+}
+
+.font-size {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 70%;
+	width: 70%;
+	border: 0px;
+	cursor: pointer;
+}
+
+.BUIC-container {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	width: 15%;
+	/* border: 1px solid red; */
+}
+
+.BUI_container {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	border-right: 2px solid rgb(233, 233, 233);
+	/* border: 1px solid red; */
+}
+
+.BUI_container > * {
+	/* border: 1px solid red; */
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	margin: 1px;
+}
+
+.color-container {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	/* border: 1px solid red; */
+}
+
+.color-container > * {
+	/* border: 1px solid red; */
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	margin: 1px;
+}
+
+.alignment-container {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	width: 10%;
+	font-size: 20px;
+	/* border: 1px solid red; */
+}
+.alignment-container > * {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	margin: 1px;
+}
+/* ==================== Menu Container CSS ENDS =====================*/
+
+/* ==================== Formula Container CSS Starts =====================*/
+
+.formula-container {
+	background-color: rgba(180, 180, 180, 0.452);
+	border: 1px solid lightgray;
+	height: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+.address-box {
+	width: 7.4%;
+	height: 80%;
+	border: 2px solid rgb(233, 233, 233);
+	border-radius: 0.2rem;
+	padding-left: 1rem;
+	/* border-left: 0px;
+	border-top: 0px;
+	border-right: 2px solid lightgrey;
+	border-bottom: 0px; */
+}
+
+.seperator {
+	filter: drop-shadow(100%);
+}
+
+.fx {
+	/* border: 1px solid red; */
+	color: red;
+	opacity: 30%;
+}
+
+.formula-box {
+	position: relative;
+	left: -0.9rem;
+	width: 85%;
+	height: 80%;
+	/* border: 1px solid lightgrey; */
+	padding-left: 1rem;
+	border: 2px solid rgba(233, 233, 233);
+	border-top: 0px;
+	border-right: 0px;
+	border-bottom: 0px;
+}
+
+/* ==================== Formula Container CSS ENDS =====================*/
